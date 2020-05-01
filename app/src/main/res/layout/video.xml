@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="4dp"
+    android:layout_margin="4dp"
+    android:background="@drawable/background"
+    android:id="@+id/linearlay"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/title"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="Title"
+        android:textSize="24sp"
+        android:textColor="#111"
+        android:paddingLeft="4dp"
+        android:layout_marginTop="8dp">
+
+    </TextView>
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/image"
+        android:adjustViewBounds="true"
+        android:layout_marginTop="12dp"
+        android:padding="4dp"
+        android:src="@color/colorPrimaryDark"
+        android:scaleType="centerCrop">
+
+    </ImageView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="78dp"
+        android:layout_marginTop="-82dp"
+        android:layout_marginLeft="99dp"
+        android:background="#fff"
+        android:layout_marginRight="4dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:id="@+id/name"
+            android:paddingLeft="12dp"
+            android:paddingTop="8dp"
+            android:textSize="22sp"
+            android:textColor="#D61616">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Created_at"
+            android:id="@+id/created_at"
+            android:paddingLeft="12dp"
+            android:paddingTop="8dp"
+            android:textSize="12sp"
+            android:textColor="#FE111111">
+
+        </TextView>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/summary"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:paddingLeft="4dp"
+        android:layout_marginTop="8dp">
+
+    </TextView>
+
+
+
+</LinearLayout>

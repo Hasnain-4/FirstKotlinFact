@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="4dp"
+    android:layout_margin="4dp"
+    android:background="@drawable/background"
+    android:id="@+id/linearlay"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+   <ImageView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:src="@drawable/ic_back"
+       android:paddingLeft="4dp"
+       android:id="@+id/back"
+       android:layout_marginTop="12dp">
+
+   </ImageView>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/contenttitle"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="Title"
+        android:textSize="24sp"
+        android:textColor="#111"
+        android:paddingLeft="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="8dp">
+
+    </TextView>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="8dp"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:scrollbars="vertical">
+
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="333dp"
+        android:id="@+id/contentimage"
+        android:adjustViewBounds="true"
+        android:layout_marginTop="4dp"
+        android:padding="4dp"
+        android:src="@color/colorPrimaryDark"
+        android:scaleType="centerCrop">
+
+    </ImageView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="78dp"
+        android:layout_marginTop="-82dp"
+        android:layout_marginLeft="99dp"
+        android:background="#fff"
+        android:layout_marginRight="4dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:id="@+id/contentname"
+            android:paddingLeft="12dp"
+            android:paddingTop="8dp"
+            android:textSize="22sp"
+            android:textColor="#D61616">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Created_at"
+            android:id="@+id/contentcreated_at"
+            android:paddingLeft="12dp"
+            android:paddingTop="8dp"
+            android:textSize="12sp"
+            android:textColor="#FE111111">
+
+        </TextView>
+
+    </LinearLayout>
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/showcontent"
+        android:textSize="18sp"
+        android:padding="4dp">
+
+    </TextView>
+
+           <view
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                class="com.google.android.youtube.player.YouTubePlayerView"
+                android:id="@+id/youtube">
+
+            </view>
+
+            <Button
+                android:id="@+id/buttonstart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background"
+                android:layout_gravity="center"
+                android:text="Start"></Button>
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+</LinearLayout>
